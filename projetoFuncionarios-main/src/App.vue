@@ -84,7 +84,6 @@ function ordenaLista() {
     <div class="row">
       <div class="col">
 
-        <!-- FORM -->
         <form @submit.prevent="salvaFuncionario">
           <div class="mb-3">
             <label class="form-label">Nome</label>
@@ -109,7 +108,6 @@ function ordenaLista() {
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
 
-        <!-- ORDENAÇÃO -->
         <div class="mt-3">
           <label class="form-label">Ordenação</label>
           <select v-model="ordenacao" @change="ordenaLista" class="form-select">
@@ -126,7 +124,6 @@ function ordenaLista() {
           </select>
         </div>
 
-        <!-- LISTA -->
         <table class="table mt-3">
           <thead>
             <tr>
