@@ -73,7 +73,11 @@ function ordenaLista() {
       resultado = a.salario - b.salario
     }
 
-    return ordenacao.value === 'C' ? resultado : -resultado
+    if (ordenacao.value === 'C') {
+      return resultado
+    } else {
+      return -resultado
+    }
   })
 }
 </script>
